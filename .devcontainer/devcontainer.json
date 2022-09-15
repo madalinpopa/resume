@@ -16,7 +16,5 @@
 	// "postCreateCommand": "uname -a",
 	// Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
 	"remoteUser": "vscode",
-	"features": {
-		"ghcr.io/madalinpopa/container-features/dotfiles:latest": {}
-	}
+	"postCreateCommand": "git clone https://github.com/madalinpopa/dotfiles.git ~/.dotfiles && cd ~/.dotfiles && install"
 }
